@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import type { Metadata } from "next";
 import { Inter as FontSans } from "next/font/google";
 import "./globals.css";
+import MeteorDemo from "@/components/magicui/animated-beam-demo";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -63,12 +64,10 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
-            <img
-              src="https://www.onboarrd.com/onboard-tree-white.png"
-              alt=""
-              className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-5 scale-125 "
-            />
             {children}
+            <div className="w-full h-screen  fixed top-0 left-0 flex items-start justify-start   ">
+              <MeteorDemo />
+            </div>
             <Navbar />
           </TooltipProvider>
         </ThemeProvider>
