@@ -51,15 +51,7 @@ export default function Navbar() {
                         "size-12"
                       )}
                     >
-                      {social.img ? (
-                        <img
-                          src={social.img}
-                          className=" rounded-full size-6"
-                          alt={name}
-                        />
-                      ) : (
-                        <social.icon className="size-4" />
-                      )}
+                      <social.icon className="size-4" />
                     </Link>
                   </TooltipTrigger>
                   <TooltipContent>
