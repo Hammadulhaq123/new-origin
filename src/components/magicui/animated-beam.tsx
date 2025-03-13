@@ -14,6 +14,7 @@ interface MeteorsProps {
   className?: string;
 }
 
+
 export const Meteors = ({
   number = 20,
   minDelay = 0.2,
